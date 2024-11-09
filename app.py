@@ -13,6 +13,7 @@ def get_message():
 
 @app.route("/lcd/api/set_message", methods=["POST"])
 def set_message():
+    global message
     data = request.get_json()
     if data:
         message = data.get("message")
