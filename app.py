@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 message = ""
 
-@app.route("/lcd")
+@app.route("/lcd/")
 def home():
     return render_template("index.html")
 
