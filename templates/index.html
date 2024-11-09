@@ -74,7 +74,7 @@
 </head>
 <body>
     <div id="message-form">
-        <input type="text" id="message" placeholder="Type your message here" maxlength="16" />
+        <input type="text" id="message" placeholder="Type your message here" maxlength="32" />
         <button onclick="submitMessage()">Submit</button>
         <div id="feedback-message"></div>
     </div>
@@ -93,7 +93,7 @@
             const feedbackMessage = document.getElementById('feedback-message');
             const message = messageInput.value.trim();
 
-            if (message.length > 16) {
+            if (message.length > 32) {
                 feedbackMessage.textContent = "Message is too long!";
                 feedbackMessage.className = "error";
                 return;
